@@ -10,6 +10,9 @@ mkdocs にMaterial を加えたコンテナイメージ
 docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material
 ```
 
+Webブラウザにて127.0.0.1:8000 へアクセスすると、変換されたページを参照できる。
+
+
 * Build documentation
 ```
 docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material build
