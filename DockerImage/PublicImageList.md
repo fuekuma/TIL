@@ -19,3 +19,12 @@ docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material build
 ```
 
 ビルドが完了するとsite フォルダに変換されたファイル群が生成される。
+
+## Marp
+https://hub.docker.com/r/marpteam/marp-cli/
+
+### How to use
+Convert slide deck into PDF
+```bash
+docker run --rm --init -v $PWD:/home/marp/app/ -e LANG=$LANG marpteam/marp-cli slide-deck.md --pdf
+```
